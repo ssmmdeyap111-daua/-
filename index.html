@@ -81,15 +81,6 @@
   </div>
 </section>
 
-<section id="gallery">
-  <div class="container">
-    <h2>معرض الصور</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/200x150?text=صورة+1" alt="صورة 1">
-      <img src="https://via.placeholder.com/200x150?text=صورة+2" alt="صورة 2">
-      <img src="https://via.placeholder.com/200x150?text=صورة+3" alt="صورة 3">
-    </div>
-  </div>
 </section>
 
 <section id="contact">
@@ -106,28 +97,10 @@
   </div>
 </footer>
 
-</body<section id="audio">
-  <div class="container">
-    <h2>الصوتيات</h2>
-
-    <audio controls>
-      <source src="lesson1.mp3" type="audio/mpeg">
-      المتصفح لا يدعم تشغيل الصوت
-    </audio>
-
-  </div>
+</body
 
 </section>
-  <section id="audio">
-  <div class="container">
-    <h2>الصوتيات</h2>
-
-    <audio controls>
-      <source src="audio/lesson1.mp3" type="audio/mpeg">
-      المتصفح لا يدعم الصوت
-    </audio>
-
-  </div>
+ 
 </section>
 </html>
 <section id="projects-gallery">
@@ -193,3 +166,92 @@
     </div>
   </div>
 </section>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>موقعي الشخصي</title>
+
+  <!-- خط النسخ العربي -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+  <!-- ملف التنسيق -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- HEADER مع اسم الموقع وصورة البروفايل -->
+  <header>
+    <div class="container">
+      <h1>سعيد مصطفى</h1>
+      <img src="images/profile.jpg" alt="صورة البروفايل" class="profile-img">
+    </div>
+  </header>
+
+  <!-- القائمة Nav -->
+  <nav>
+    <div class="container">
+      <a href="#about">من أنا</a>
+      <a href="#projects-gallery">مشاريعي</a>
+      <a href="#contact">تواصل معي</a>
+    </div>
+  </nav>
+
+  <!-- قسم المشاريع مع معرض الصور والصوتيات داخل كل كارت -->
+  <section id="projects-gallery">
+    <div class="container">
+      <h2>مشاريعي</h2>
+      <div class="projects-row">
+
+        <!-- مشروع 1 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/200x150?text=مشروع+1" alt="مشروع 1">
+          <div class="project-content">
+            <h3>مشروع 1</h3>
+            <p>وصف قصير للمشروع يشرح الفكرة والهدف.</p>
+            <audio controls>
+              <source src="lesson1.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+
+        <!-- مشروع 2 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/200x150?text=مشروع+2" alt="مشروع 2">
+          <div class="project-content">
+            <h3>مشروع 2</h3>
+            <p>وصف قصير للمشروع الثاني مع بعض التفاصيل.</p>
+            <audio controls>
+              <source src="lesson2.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+
+        <!-- مشروع 3 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/200x150?text=مشروع+3" alt="مشروع 3">
+          <div class="project-content">
+            <h3>مشروع 3</h3>
+            <p>وصف قصير للمشروع الثالث، يمكنك تغييره حسب الحاجة.</p>
+            <audio controls>
+              <source src="lesson3.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم تواصل معي -->
+  <section id="contact">
+    <div class="container">
+      <h2>تواصل معي</h2>
+      <p>يمكنك التواصل معي عبر البريد أو الهاتف أو وسائل التواصل الاجتماعي.</p>
+    </div>
+  </section>
+
+</body>
+</html>
