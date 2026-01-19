@@ -363,3 +363,46 @@ header h1 {
     </div>
   </div>
 </section>
+.sections-row {
+  display: flex;         /* صف أفقي */
+  flex-wrap: wrap;       /* يلتف عند صغر الشاشة */
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.section-card:hover {
+  transform: scale(1.05);
+}
+
+.section-card h3 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.section-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.section-card audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* التصميم المتجاوب للموبايل */
+@media (max-width: 768px) {
+  .sections-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
