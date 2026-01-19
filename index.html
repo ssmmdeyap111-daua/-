@@ -22,153 +22,78 @@
     </div>
   </header>
 
-  <!-- القائمة Nav -->
+  <!-- Nav (اختياري) -->
   <nav>
     <div class="container">
       <a href="#about">من أنا</a>
-      <a href="#projects-gallery">مشاريعي</a>
-      <a href="#contact">تواصل معي</a>
+      <a href="#main-sections">الأقسام</a>
+      <a href="#contact">تواصل معنا</a>
     </div>
   </nav>
 
-  <!-- قسم المشاريع مع الصور والصوتيات داخل كل كارت -->
-  <section id="projects-gallery">
+  <!-- العنوان الرئيسي -->
+  <section id="main-title">
     <div class="container">
-      <h2>مشاريعي</h2>
-      <div class="projects-row">
-
-        <!-- مشروع 1 -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/200x150?text=مشروع+1" alt="مشروع 1">
-          <div class="project-content">
-            <h3>مشروع 1</h3>
-            <p>وصف قصير للمشروع يشرح الفكرة والهدف.</p>
-            <audio controls>
-              <source src="lesson1.mp3" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-
-        <!-- مشروع 2 -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/200x150?text=مشروع+2" alt="مشروع 2">
-          <div class="project-content">
-            <h3>مشروع 2</h3>
-            <p>وصف قصير للمشروع الثاني مع بعض التفاصيل.</p>
-            <audio controls>
-              <source src="lesson2.mp3" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-
-        <!-- مشروع 3 -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/200x150?text=مشروع+3" alt="مشروع 3">
-          <div class="project-content">
-            <h3>مشروع 3</h3>
-            <p>وصف قصير للمشروع الثالث، يمكنك تغييره حسب الحاجة.</p>
-            <audio controls>
-              <source src="lesson3.mp3" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-
+      <h2>موقعنا</h2>
+      <!-- الصف الأفقي لكل الأقسام -->
+      <div class="sections-line">
+        <a href="#about">من نحن</a>
+        <span>-</span>
+        <a href="#books">الكتب والمؤلفات</a>
+        <span>-</span>
+        <a href="#lessons">الدروس والصوتيات</a>
+        <span>-</span>
+        <a href="#sermons">خطب الجمعة</a>
+        <span>-</span>
+        <a href="#contact">تواصل معنا</a>
       </div>
     </div>
   </section>
 
-  <!-- قسم تواصل معي -->
+  <!-- قسم من نحن -->
+  <section id="about">
+    <div class="container">
+      <h3>من نحن</h3>
+      <p>نبذة عن الموقع أو الشخص.</p>
+    </div>
+  </section>
+
+  <!-- قسم الكتب والمؤلفات -->
+  <section id="books">
+    <div class="container">
+      <h3>الكتب والمؤلفات</h3>
+      <p>قائمة بالكتب والمؤلفات.</p>
+    </div>
+  </section>
+
+  <!-- قسم الدروس والصوتيات -->
+  <section id="lessons">
+    <div class="container">
+      <h3>الدروس والصوتيات</h3>
+      <audio controls>
+        <source src="lesson1.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="lesson2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </section>
+
+  <!-- قسم خطب الجمعة -->
+  <section id="sermons">
+    <div class="container">
+      <h3>خطب الجمعة</h3>
+      <p>استمع إلى خطب الجمعة السابقة.</p>
+    </div>
+  </section>
+
+  <!-- قسم تواصل معنا -->
   <section id="contact">
     <div class="container">
-      <h2>تواصل معي</h2>
-      <p>يمكنك التواصل معي عبر البريد أو الهاتف أو وسائل التواصل الاجتماعي.</p>
+      <h3>تواصل معنا</h3>
+      <p>البريد، الهاتف، ووسائل التواصل الاجتماعي.</p>
     </div>
   </section>
 
 </body>
 </html>
-<section id="main-sections">
-  <div class="container">
-    <h2>موقعنا</h2>
-    <div class="sections-row">
-
-      <!-- من نحن -->
-      <div class="section-card">
-        <h3>من نحن</h3>
-        <p>نبذة عن الموقع أو الشخص.</p>
-      </div>
-
-      <!-- الكتب والمؤلفات -->
-      <div class="section-card">
-        <h3>الكتب والمؤلفات</h3>
-        <p>قائمة بالكتب والمؤلفات.</p>
-      </div>
-
-      <!-- الدروس والصوتيات -->
-      <div class="section-card">
-        <h3>الدروس والصوتيات</h3>
-        <audio controls>
-          <source src="lesson1.mp3" type="audio/mpeg">
-        </audio>
-        <audio controls>
-          <source src="lesson2.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <!-- خطب الجمعة -->
-      <div class="section-card">
-        <h3>خطب الجمعة</h3>
-        <p>استمع إلى خطب الجمعة السابقة.</p>
-      </div>
-
-      <!-- تواصل معنا -->
-      <div class="section-card">
-        <h3>تواصل معنا</h3>
-        <p>البريد، الهاتف، ووسائل التواصل الاجتماعي.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section id="main-sections">
-  <div class="container">
-    <div class="sections-row">
-
-      <!-- من نحن -->
-      <div class="section-card">
-        <h3>من نحن</h3>
-        <p>نبذة عن الموقع أو الشخص.</p>
-      </div>
-
-      <!-- الكتب والمؤلفات -->
-      <div class="section-card">
-        <h3>الكتب والمؤلفات</h3>
-        <p>قائمة بالكتب والمؤلفات.</p>
-      </div>
-
-      <!-- الدروس والصوتيات -->
-      <div class="section-card">
-        <h3>الدروس والصوتيات</h3>
-        <audio controls>
-          <source src="lesson1.mp3" type="audio/mpeg">
-        </audio>
-        <audio controls>
-          <source src="lesson2.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <!-- خطب الجمعة -->
-      <div class="section-card">
-        <h3>خطب الجمعة</h3>
-        <p>استمع إلى خطب الجمعة السابقة.</p>
-      </div>
-
-      <!-- تواصل معنا -->
-      <div class="section-card">
-        <h3>تواصل معنا</h3>
-        <p>البريد، الهاتف، ووسائل التواصل الاجتماعي.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
