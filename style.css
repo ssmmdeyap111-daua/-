@@ -207,3 +207,13 @@ body {
 .scrolling-verse:hover span {
   animation-play-state: paused;
 }
+/* تكبير اسم الشيخ */
+.main-header h2 {
+  font-family: 'Amiri', serif !important;
+  color: #1a5f63 !important;
+  font-size: 52px !important;   /* تكبير الاسم */
+  font-weight: bold !important;
+  margin-top: 10px !important;
+  letter-spacing: 1px !important;
+  text-align: center !important;
+}
