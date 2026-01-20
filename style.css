@@ -47,12 +47,13 @@ body {
 }
 
 .card {
-    background: #e6eef1;
-    width: 260px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #ccc;
+    background: #e9f1f4;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* المحتوى */
