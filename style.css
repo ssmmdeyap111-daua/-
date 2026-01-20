@@ -84,3 +84,11 @@ body {
     inset 0 0 2px rgba(0,0,0,0.4),
     0 4px 6px rgba(0,0,0,0.25);
 }
+.main-header h2 {
+  font-family: 'Amiri', serif;
+  color: #1a5f63;  /* نفس لون الموقع */
+  font-size: 40px;  /* يكبر قليلاً */
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 1px;  /* قليل من التباعد للأناقة */
+}
