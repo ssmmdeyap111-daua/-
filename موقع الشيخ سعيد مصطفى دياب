@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الموقع الرسمي</title>
+
+  <!-- الخطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
+
+  <!-- ملف التنسيق -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- الشريط العلوي -->
+<div class="top-bar">
+  <div>الموقع الرسمي</div>
+  <div>
+    <a href="#">Facebook</a>
+    <a href="#">YouTube</a>
+  </div>
+</div>
+
+<!-- العنوان -->
+<header class="main-header">
+  <h1>الموقع الرسمي لفضيلة الشيخ</h1>
+  <h2>اسم الشيخ هنا</h2>
+</header>
+
+<!-- شريط التنقل -->
+<nav class="main-nav">
+  <a href="#">الدروس العلمية</a>
+  <a href="#">الخطب والمحاضرات</a>
+  <a href="#">المقالات</a>
+  <a href="#">الكتب</a>
+  <a href="#">الفتاوى</a>
+</nav>
+
+<!-- الأيقونات -->
+<section class="icons-section">
+  <a class="icon-box">فوائد</a>
+  <a class="icon-box">دروس</a>
+  <a class="icon-box">فتاوى</a>
+  <a class="icon-box">دورات</a>
+  <a class="icon-box">محاضرات</a>
+  <a class="icon-box">الفقه<br>والأصول</a>
+</section>
+
+</body>
+</html>
