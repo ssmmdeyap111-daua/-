@@ -190,3 +190,23 @@ footer {
 .icon-box.new {
   border-color: #4b7f52;
 }
+body {
+  margin: 0;
+  font-family: 'Amiri', serif;
+  direction: rtl;
+}
+
+.top-bar {
+  background: linear-gradient(to left, #1aa6b7, #5bc0c8);
+  color: white;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.top-bar a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
