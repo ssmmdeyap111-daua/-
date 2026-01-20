@@ -151,3 +151,42 @@ footer {
   background: #f0f7f3;
   border-color: #2e8b57;
 }
+.icons-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  background: #d6b08a;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.icon-box {
+  width: 120px;
+  height: 120px;
+  background: #cfa47c;
+  border: 5px solid #eee;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5a2c0c;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.6);
+  transition: 0.3s;
+}
+
+.icon-box:hover {
+  background: #b88a5c;
+  color: #fff;
+}
+
+/* تمييز الفقه والأصول */
+.icon-box.new {
+  border-color: #4b7f52;
+}
