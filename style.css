@@ -92,3 +92,33 @@ body {
   margin-top: 10px;
   letter-spacing: 1px;  /* قليل من التباعد للأناقة */
 }
+.scrolling-verse {
+  width: 100%;
+  background: #f0e5d8;  /* لون هادئ مشابه للموقع */
+  color: #2f4f4f;        /* لون الخط */
+  font-family: 'Scheherazade New', serif;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-top: 2px solid #cfa47c;
+  border-bottom: 2px solid #cfa47c;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+/* الحركة الأفقية */
+.scrolling-verse::after {
+  content: attr(data-text);
+}
+
+.scrolling-verse span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-verse 20s linear infinite;
+}
+
+@keyframes scroll-verse {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
