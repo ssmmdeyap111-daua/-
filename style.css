@@ -107,3 +107,35 @@ body {
   margin-top: 10px;
 }
 
+/* الشريط المتحرك للآية - شفاف بالكامل */
+.scrolling-verse {
+  width: 100%;
+  background: transparent;   /* شفاف */
+  color: #2f4f4f;           /* لون النص */
+  font-family: 'Scheherazade New', serif;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;        /* توسيط النص */
+}
+
+.scrolling-verse span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-verse 25s linear infinite;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+@keyframes scroll-verse {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* توقف الحركة عند مرور الماوس */
+.scrolling-verse:hover span {
+  animation-play-state: paused;
+}
