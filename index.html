@@ -81,3 +81,22 @@
     <li><a href="#">تواصل معنا</a></li>
   </ul>
 </nav>
+سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
+
+سعيد بن مصطفى دياب, [03/08/1447 07:38 ص]
+<script>
+  const dropdown = document.querySelector('.dropdown > a');
+  const dropdownParent = document.querySelector('.dropdown');
+
+  dropdown.addEventListener('click', () => {
+    dropdownParent.classList.toggle('show');
+  });
+
+  // إخفاء القائمة عند الضغط خارجها
+  window.addEventListener('click', function(e) {
+    if (!dropdownParent.contains(e.target)) {
+      dropdownParent.classList.remove('show');
+    }
+  });
+</script>
