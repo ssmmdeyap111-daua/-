@@ -49,6 +49,7 @@
       height: 60px;
       font-size: 1.3rem;
       font-family: 'Amiri', serif; /* خط خاص للشريط */
+      transition: background-color 0.3s ease; /* انتقال ناعم للخلفية */
     }
     .marquee span {
       display: inline-block;
@@ -58,6 +59,9 @@
       top: 50%;
       transform: translateY(-50%);
       animation-play-state: running;
+    }
+    .marquee:hover {
+      background-color: #b8860b; /* خلفية أغمق عند التوقف */
     }
     .marquee:hover span {
       animation-play-state: paused; /* توقف عند مرور الموس */
