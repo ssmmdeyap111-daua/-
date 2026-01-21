@@ -1,1 +1,104 @@
+سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
 
+سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
+document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+سعيد بن مصطفى دياب, [03/08/1447 09:10 ص]
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>موقع الشيخ سعيد مصطفى دياب الرسمي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .nav {
+      background: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .content-section {
+      padding: 20px;
+      display: none;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <div class="nav">
+    <a data-sec="lessons">الدروس العلمية</a>
+    <a data-sec="books">الكتب</a>
+    <a data-sec="audio">الصوتيات</a>
+    <a data-sec="articles">المقالات</a>
+    <a data-sec="contact">تواصل معنا</a>
+  </div>
+
+  <!-- الأقسام -->
+  <div id="lessons" class="content-section">
+    <h2>الدروس العلمية</h2>
+    <p>قائمة الدروس هنا...</p>
+  </div>
+
+  <div id="books" class="content-section">
+    <h2>الكتب</h2>
+    <ul>
+      <li>كتاب 1</li>
+      <li>كتاب 2</li>
+      <li>كتاب 3</li>
+    </ul>
+  </div>
+
+  <div id="audio" class="content-section">
+    <h2>الصوتيات</h2>
+    <p>روابط أو قائمة صوتيات...</p>
+  </div>
+
+  <div id="articles" class="content-section">
+    <h2>المقالات</h2>
+    <p>محتوى المقالات...</p>
+  </div>
+
+  <div id="contact" class="content-section">
+    <h2>تواصل معنا</h2>
+    <p>نموذج أو معلومات التواصل...</p>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('.nav a');
+    const sections = document.querySelectorAll('.content-section');
+
+    links.forEach(l => {
+      l.addEventListener('click', () => {
+        // إخفاء كل الأقسام
+        sections.forEach(s => s.style.display = 'none');
+        // إظهار القسم المحدد
+        document.getElementById(l.dataset.sec).style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
