@@ -1,53 +1,153 @@
+سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
+
+سعيد بن مصطفى دياب, [03/08/1447 08:10 ص]
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>الموقع الرسمي</title>
+  <title>موقعي</title>
+  <style>
+    /* الشريط أسفل الشريط المتحرك */
+    .main-menu {
+      background-color: #f5f5f5;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
 
-  <!-- الخطوط -->
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
+    .main-menu ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- ملف التنسيق -->
-  <link rel="stylesheet" href="style.css">
+    .main-menu li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* الأقسام */
+    #sections-container {
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .section {
+      display: none; /* مخفية افتراضياً */
+    }
+
+    /* تنسيق الكتب */
+    .books-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    .book {
+      text-align: center;
+    }
+
+    .book img {
+      width: 120px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .book p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- الشريط العلوي -->
-<div class="top-bar">
-  <div>الموقع الرسمي</div>
-  <div>
-    <a href="#">Facebook</a>
-    <a href="#">YouTube</a>
+  <!-- الشريط أسفل الشريط المتحرك -->
+  <nav class="main-menu">
+    <ul>
+      <li><a data-section="lessons">الدروس</a></li>
+      <li><a data-section="books">الكتب</a></li>
+      <li><a data-section="audio">الصوتيات</a></li>
+      <li><a data-section="sermons">خطب الجمعة</a></li>
+      <li><a data-section="contact">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- الأقسام أسفل الشريط -->
+  <div id="sections-container">
+
+    <!-- الدروس -->
+    <div id="lessons" class="section">
+      <h2>الدروس</h2>
+      <p>محتوى الدروس هنا...</p>
+    </div>
+
+    <!-- الكتب -->
+    <div id="books" class="section">
+      <h2>الكتب</h2>
+      <div class="books-container">
+        <div class="book">
+          <img src="images/book1.jpg" alt="حياة القلوب">
+          <p>حياة القلوب</p>
+        </div>
+        <div class="book">
+          <img src="images/book2.jpg" alt="كتاب آخر">
+          <p>كتاب آخر</p>
+        </div>
+        <!-- أضف كتب أخرى هنا -->
+      </div>
+    </div>
+
+    <!-- الصوتيات -->
+    <div id="audio" class="section">
+      <h2>الصوتيات</h2>
+      <p>محتوى الصوتيات هنا...</p>
+    </div>
+
+    <!-- خطب الجمعة -->
+    <div id="sermons" class="section">
+      <h2>خطب الجمعة</h2>
+      <p>محتوى الخطب هنا...</p>
+    </div>
+
+    <!-- تواصل معنا -->
+    <div id="contact" class="section">
+      <h2>تواصل معنا</h2>
+      <p>نموذج التواصل هنا...</p>
+    </div>
+
   </div>
-</div>
 
-<!-- العنوان الرئيسي -->
-<header class="main-header">
-  <h1>الموقع الرسمي لفضيلة الشيخ</h1>
-  <h2>سعيد مصطفى دياب</h2>
-</header>
-<div class="scrolling-verse">
-  <div class="verse-track">
-    <span>قال الله تعالى: ﴿قُلْ ‌هذِهِ ‌سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحَانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-    <span>قال الله تعالى: ﴿قُلْ ‌هذِهِ ‌سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحَانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-  </div>
+  <!-- JavaScript لإظهار الأقسام عند الضغط -->
+  <script>
+    const menuLinks = document.querySelectorAll('.main-menu a');
+    const sections = document.querySelectorAll('.section');
 
-<nav class="main-nav">
-  <a href="#">الدروس العلمية</a>
-  <a href="#">الخطب والمحاضرات</a>
-  <a href="#">المقالات</a>
-  <a href="#">الكتب</a>
-  <a href="#">الفتاوى</a>
-</nav>
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = this.dataset.section;
 
-<!-- الأيقونات -->
-<section class="icons-section">
-  <a class="icon-box">فوائد</a>
-  <a class="icon-box">دروس</a>
-  <a class="icon-box">فتاوى</a>
-  <a class="icon-box">دورات</a>
-  <a class="icon-box">محاضرات</a>
-  <a class="icon-box">الفقه<br>والأصول</a>
-</section>
+        sections.forEach(sec => {
+          if(sec.id === target){
+            sec.style.display = 'block';
+          } else {
+            sec.style.display = 'none';
+          }
+        });
 
+        // تمرير تلقائي إلى القسم عند الضغط (اختياري)
+        document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
