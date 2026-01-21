@@ -15,7 +15,7 @@
       background-color: #2e7d32;
       color: white;
       text-align: center;
-      padding: 80px 20px; /* جعل الشريط عريض */
+      padding: 80px 20px;
     }
     .site-title {
       font-family: 'Scheherazade New', serif;
@@ -117,6 +117,7 @@
 </head>
 <body id="top">
 
+  <!-- الهيدر -->
   <header>
     <h1 class="site-title">الموقع الرسمي</h1>
     <div class="title-space"></div>
@@ -127,6 +128,7 @@
     </div>
   </header>
 
+  <!-- القائمة -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
       <a class="navbar-brand" href="index.html" style="font-size:1.2rem; font-weight:bold;">الرئيسية</a>
@@ -136,36 +138,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles"<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>المقالات</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>📚 المقالات</h1>
-  </header>
-
-  <main class="container my-5">
-    <article class="mb-4">
-      <h2>عنوان المقال الأول</h2>
-      <p>نص المقال الكامل هنا...</p>
-    </article>
-
-    <article class="mb-4">
-      <h2>عنوان المقال الثاني</h2>
-      <p>نص المقال الكامل هنا...</p>
-    </article>
-  </main>
-
-  <footer class="bg-success text-white text-center p-3">
-    <p>© 2026 - الموقع الرسمي</p>
-  </footer>
-</body>
-</html>
-><i class="fas fa-newspaper"></i> المقالات</a></li>
+          <li class="nav-item"><a class="nav-link" href="articles.html"><i class="fas fa-newspaper"></i> المقالات</a></li>
           <li class="nav-item"><a class="nav-link" href="#library"><i class="fas fa-book-open"></i> المكتبة</a></li>
           <li class="nav-item"><a class="nav-link" href="#fatwa"><i class="fas fa-balance-scale"></i> الفتاوى</a></li>
           <li class="nav-item"><a class="nav-link" href="books.html"><i class="fas fa-book"></i> المؤلفات</a></li>
@@ -181,20 +154,23 @@
   <!-- زر العودة للأعلى -->
   <a href="#top" id="backToTop">⬆️</a>
 
+  <!-- الفوتر -->
   <footer>
     <p>© 2026 - الموقع الرسمي للشيخ سعيد مصطفى دياب</p>
   </footer>
 
-  <script src="script.js"// إظهار زر العودة للأعلى عند النزول
-window.onscroll = function() {
-  const btn = document.getElementById("backToTop");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
-></script>
+  <!-- سكربتات -->
+  <script>
+    // إظهار زر العودة للأعلى عند النزول
+    window.onscroll = function() {
+      const btn = document.getElementById("backToTop");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
