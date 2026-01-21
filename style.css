@@ -226,3 +226,58 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
+header {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 50px 20px; /* زيادة ارتفاع الشريط */
+}
+
+.site-title {
+  font-family: 'Scheherazade New', serif;
+  font-size: 2.2rem;   /* أصغر قليلاً */
+  color: #ffd700;      /* ذهبي */
+  margin-bottom: 5px;
+}
+
+.title-space {
+  margin: 15px 0; /* مسافة فاصلة بين العنوان والاسم */
+}
+
+.site-subtitle {
+  font-family: 'Scheherazade New', serif;
+  font-size: 3.5rem;   /* أكبر من العنوان */
+  border: 6px double #d4af37;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #d4af37;
+  margin-bottom: 15px;
+}
+
+.marquee {
+  background-color: #d4af37; /* اللون الذهبي */
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;       /* بكامل العرض */
+  height: 60px;      /* عريض */
+  font-size: 1.3rem; /* خط أكبر */
+  text-align: right; /* النص يبدأ من اليمين */
+}
+
+.marquee span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: scroll-left 20s linear infinite;
+  line-height: 60px;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
