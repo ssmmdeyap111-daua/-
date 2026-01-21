@@ -1,499 +1,152 @@
-body {
-  margin: 0;
-  direction: rtl;
-  font-family: 'Scheherazade New', serif;
-  background: #f7f7f7;
-}
-
-/* الشريط العلوي */
-.top-bar {
-  background: linear-gradient(to left, #1aa6b7, #5bc0c8);
-  color: #fff;
-  padding: 6px 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-
-.top-bar a {
-  color: #fff;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-/* العنوان */
-.main-header {
-  background: linear-gradient(to bottom, #e8f6f7, #cdebee);
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.main-header h1 {
-  font-family: 'Amiri', serif;
-  color: #2f6f73;
-}
-
-.main-header h2 {
-  font-family: 'Amiri', serif;
-  color: #1a5f63;
-  font-size: 36px;
-}
-
-/* شريط التنقل */
-.main-nav {
-  background: linear-gradient(to bottom, #1aa6b7, #128999);
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-
-.main-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* الأيقونات */
-.icons-section {
-  background: linear-gradient(to right, #d2a679, #e6c9a8);
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.icon-box {
-  position: relative;
-  width: 115px;
-  height: 115px;
-  background: radial-gradient(circle, #f6e2c8, #cfa47c);
-  border: 6px solid #eee;
-  border-radius: 20px;
-  font-size: 18px;
-  color: #6b2f12;
-  font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow:
-    inset 0 0 12px rgba(255,255,255,0.8),
-    inset 0 0 2px rgba(0,0,0,0.4),
-    0 4px 6px rgba(0,0,0,0.25);
-}
-
-.scrolling-verse {
-  width: 100%;
-  background: #f0e5d8;  /* لون هادئ مشابه للموقع */
-  color: #2f4f4f;        /* لون الخط */
-  font-family: 'Scheherazade New', serif;
-  font-size: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  border-top: 2px solid #cfa47c;
-  border-bottom: 2px solid #cfa47c;
-  padding: 10px 0;
-  margin-top: 10px;
-}
-.main-header h2 {
-  font-family: 'Amiri', serif;
-  color: #1a5f63;  
-  font-size: 70px;   /* تكبير الاسم */
-  font-weight: bold;
-  margin-top: 10px;
-  letter-spacing: 1px; 
-}
-/* الشريط المتحرك للآية - شفاف بالكامل */
-.scrolling-verse {
-  width: 100%;
-  background: transparent;   /* شفاف */
-  color: #2f4f4f;           /* لون النص */
-  font-family: 'Scheherazade New', serif;
-  font-size: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 10px 0;
-  margin-top: 10px;
-  position: relative;
-  text-align: center;        /* توسيط النص */
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-verse 25s linear infinite;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* توقف الحركة عند مرور الماوس */
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-/* الشريط المتحرك للآية - شفاف واحترافي */
-.scrolling-verse {
-  width: 100%;
-  background: rgba(255, 255, 255, 0); /* شفاف بالكامل */
-  color: #2f4f4f;                      /* لون النص */
-  font-family: 'Scheherazade New', serif;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 12px 0;
-  margin-top: 10px;
-  position: relative;
-  text-align: center;                  /* توسيط النص */
-  z-index: 10;                         /* فوق أي محتوى */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.25); /* ظل للنص */
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-verse 30s linear infinite; /* حركة أبطأ أكثر سلاسة */
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* توقف الحركة عند مرور الماوس */
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-/* الشريط المتحرك للآية */
-.scrolling-verse {
-  width: 100%;
-  background: transparent;          /* شفاف */
-  color: #0b6623;                   /* أخضر بارز */
-  font-family: 'Scheherazade New', serif;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 12px 0;
-  margin-top: 10px;
-  position: relative;
-  text-align: center;               /* توسيط النص */
-  z-index: 10;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25); /* ظل خفيف للنص */
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-verse 30s linear infinite;
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* توقف الحركة عند مرور الماوس */
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-/* تكبير اسم الشيخ */
-.main-header h2 {
-  font-family: 'Amiri', serif !important;
-  color: #1a5f63 !important;
-  font-size: 52px !important;   /* تكبير الاسم */
-  font-weight: bold !important;
-  margin-top: 10px !important;
-  letter-spacing: 1px !important;
-  text-align: center !important;
-}
-.scrolling-verse {
-  width: 100%;
-  background: transparent;          
-  color: #0b6623;                   /* أخضر بارز */
-  font-family: 'Scheherazade New', serif;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 12px 0;
-  margin-top: 10px;
-  position: relative;
-  text-align: center;
-  z-index: 10;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-verse 40s linear infinite;  /* زيادة الوقت للسلاسة */
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-/* الشريط المتحرك للآية - مستمر بلا توقف */
-.scrolling-verse {
-  width: 100%;
-  background: transparent;          /* شفاف */
-  color: #0b6623;                   /* أخضر بارز */
-  font-family: 'Scheherazade New', serif;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 12px 0;
-  margin-top: 10px;
-  position: relative;
-  text-align: center;
-  z-index: 10;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  padding-left: 100%;                /* يبدأ من خارج الشاشة على اليمين */
-  animation: scroll-verse 25s linear infinite; /* الحركة مستمرة بلا توقف */
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }   /* بداية من اليمين خارج الشاشة */
-  100% { transform: translateX(-100%); }  /* تختفي من اليسار وتعود من اليمين */
-}
-
-/* توقف الحركة عند مرور الماوس */
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-.scrolling-verse {
-  width: 100%;
-  background: transparent;
-  color: #0b6623; 
-  font-family: 'Scheherazade New', serif;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 12px 0;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  animation: scroll-verse 25s linear infinite;
-  transform: translateX(100%);  /* يبدأ مباشرة على الحافة اليمنى */
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }   /* يبدأ من الحافة اليمنى */
-  100% { transform: translateX(-100%); }  /* يخرج من اليسار ويعود تلقائيًا */
-}
-
-/* توقف الحركة عند مرور الماوس */
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-.scrolling-verse {
-  width: 100%;
-  background: transparent;       /* شفاف */
-  color: #0b6623;                /* أخضر واضح */
-  font-family: 'Scheherazade New', serif;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 5px 0;                /* تقليل المسافة العلوية والسفلية */
-  margin: 0;                      /* إزالة أي هامش زائد */
-  text-align: center;
-  position: relative;             
-  z-index: 10;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
-}
-
-.scrolling-verse span {
-  display: inline-block;
-  animation: scroll-verse 25s linear infinite;
-  transform: translateX(100%);
-}
-
-@keyframes scroll-verse {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* توقف الحركة عند مرور الماوس */
-.scrolling-verse:hover span {
-  animation-play-state: paused;
-}
-<div class="scrolling-verse">
-  <div class="verse-track">
-    <span>قال الله تعالى: ﴿قُلْ ‌هذِهِ ‌سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحَانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-    <span>قال الله تعالى: ﴿قُلْ ‌هذِهِ ‌سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحَانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-  </div>
-</div>
-.books {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
-
-.book {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 15px;
-}
-
-.book img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.book h3 {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
-}
-
-.book a {
-  text-decoration: none;
-}
 سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
 <img src="../images/book1.jpg" alt="غلاف الكتاب">
 
-سعيد بن مصطفى دياب, [03/08/1447 07:22 ص]
-.books-section {
-  padding: 20px;
-  text-align: center;
+سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
+document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+سعيد بن مصطفى دياب, [03/08/1447 09:47 ص]
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-.books-bar {
+header {
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.marquee-container {
+  background-color: #e8f5e9;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid #2e7d32;
+}
+
+.marquee-container span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: move 20s linear infinite;
+  font-size: 18px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.nav {
+  background-color: #fff;
   display: flex;
-  justify-content: flex-start; /* أو center حسب رغبتك */
-  gap: 20px; /* مسافة بين الكتب */
-  overflow-x: auto; /* إذا زاد عدد الكتب يصبح الشريط قابل للتمرير */
-  padding: 10px 0;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  border-bottom: 2px solid #2e7d32;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.nav a:hover {
+  background-color: #2e7d32;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.content-section {
+  display: none;
+  padding: 25px 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.books-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 15px 0;
 }
 
 .book {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 150px; /* حجم كل بطاقة كتاب */
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .book img {
-  width: 120px;
-  height: 180px;
+  width: 150px;
+  height: 220px;
   object-fit: cover;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .book p {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #333;
-}
-سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
-<img src="../images/book1.jpg" alt="غلاف الكتاب">
-
-سعيد بن مصطفى دياب, [03/08/1447 07:36 ص]
-/* الشريط الرئيسي */
-.top-menu {
-  background-color: #f5f5f5;
-  padding: 10px 20px;
-  font-family: Arial, sans-serif;
+  margin-top: 8px;
+  font-size: 15px;
 }
 
-.top-menu ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+.books-container::-webkit-scrollbar {
+  height: 8px;
 }
 
-.top-menu li {
-  position: relative;
+.books-container::-webkit-scrollbar-thumb {
+  background-color: #2e7d32;
+  border-radius: 4px;
 }
 
-.top-menu li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-/* محتوى القائمة المنسدلة */
-.dropdown-content {
-  display: none; /* مخفية افتراضياً */
-  position: absolute;
-  top: 100%; /* أسفل الزر */
-  left: 0;
-  background-color: #fff;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 100;
-  white-space: nowrap;
-  border-radius: 5px;
-  overflow-x: auto; /* تمرير أفقي إذا زادت الكتب */
-}
-
-/* كل كتاب داخل القائمة */
-.dropdown-content .book {
-  display: inline-block;
-  margin: 0 10px;
-  text-align: center;
-}
-
-.dropdown-content .book img {
-  width: 100px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.dropdown-content .book p {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #333;
-}
-
-/* إظهار القائمة عند الضغط أو المرور */
-.dropdown.show .dropdown-content {
-  display: flex;
-}
-
-/* تأثير عند المرور للكمبيوتر */
-@media(min-width: 768px){
-  .dropdown:hover .dropdown-content {
-    display: flex;
+@media(max-width: 600px){
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .book {
+    width: 120px;
+  }
+  .book img {
+    width: 120px;
+    height: 180px;
   }
 }
