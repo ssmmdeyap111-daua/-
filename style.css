@@ -334,3 +334,14 @@ header {
 html {
   scroll-behavior: smooth;
 }
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none; /* مخفي في البداية */
+  z-index: 999;
+}
+
+html {
+  scroll-behavior: smooth; /* الانتقال السلس */
+}
