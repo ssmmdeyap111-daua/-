@@ -4,98 +4,46 @@
   <meta charset="UTF-8">
   <title>الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- خط عربي قريب من خط الثلث -->
   <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
-  <!-- أيقونات Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-      background-color: #f9f9f9;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .site-title {
-      font-family: 'Scheherazade New', serif;
-      font-size: 2.2rem;   /* أصغر */
-      color: #ffd700;      /* ذهبي */
-      margin-bottom: 5px;
-    }
+    body {font-family: 'Tajawal', sans-serif; background-color: #f9f9f9;}
+    header {background-color: #2e7d32; color: white; text-align: center; padding: 50px 20px;}
+    .site-title {font-family: 'Scheherazade New', serif; font-size: 2.2rem; color: #ffd700; margin-bottom: 5px;}
+    .title-space {margin: 15px 0;}
     .site-subtitle {
-      font-family: 'Scheherazade New', serif;
-      font-size: 3.5rem;   /* أكبر */
-      border: 6px double #d4af37;
-      display: inline-block;
-      padding: 15px 25px;
-      border-radius: 20px;
-      background: rgba(0,0,0,0.2);
-      box-shadow: 0 0 20px #d4af37;
-      margin-bottom: 10px;
+      font-family: 'Scheherazade New', serif; font-size: 3.5rem;
+      border: 6px double #d4af37; display: inline-block; padding: 15px 25px;
+      border-radius: 20px; background: rgba(0,0,0,0.2); box-shadow: 0 0 20px #d4af37;
+      margin-bottom: 15px;
     }
     .marquee {
-      background-color: #d4af37; /* اللون الذهبي */
-      color: black;
-      font-weight: bold;
-      padding: 15px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;       /* بكامل العرض */
-      height: 60px;      /* عريض */
-      font-size: 1.3rem; /* خط أكبر */
+      background-color: #d4af37; color: black; font-weight: bold; padding: 15px;
+      overflow: hidden; position: relative; width: 100%; height: 60px; font-size: 1.3rem; text-align: right;
     }
-    .marquee span {
-      display: inline-block;
-      white-space: nowrap;
-      position: absolute;
-      animation: scroll-left 20s linear infinite;
-      line-height: 60px;
-    }
-    @keyframes scroll-left {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-    /* تأثير الأيقونات في القائمة */
-    .navbar-nav .nav-link i {
-      margin-left: 5px;
-      transition: transform 0.3s, color 0.3s;
-    }
-    .navbar-nav .nav-link:hover i {
-      transform: scale(1.2);
-      color: #ffd700; /* ذهبي */
-    }
-    .navbar-nav .nav-link:hover {
-      color: #ffd700 !important; /* النص يصبح ذهبي أيضًا */
-    }
-    footer {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
+    .marquee span {display: inline-block; white-space: nowrap; position: absolute; animation: scroll-left 20s linear infinite; line-height: 60px;}
+    @keyframes scroll-left {0% {transform: translateX(100%);} 100% {transform: translateX(-100%);}}
+    .navbar-nav .nav-link i {margin-left: 5px; transition: transform 0.3s, color 0.3s;}
+    .navbar-nav .nav-link:hover i {transform: scale(1.2); color: #ffd700;}
+    .navbar-nav .nav-link:hover {color: #ffd700 !important;}
+    footer {background-color: #2e7d32; color: white; text-align: center; padding: 15px; margin-top: 30px;}
   </style>
 </head>
 <body>
 
-  <!-- رأس الموقع -->
   <header>
     <h1 class="site-title">الموقع الرسمي</h1>
+    <div class="title-space"></div>
     <h2 class="site-subtitle">للشيخ سعيد مصطفى دياب</h2>
     <p>رسالة هداية ونور</p>
-    <!-- الشريط المتحرك -->
     <div class="marquee">
       <span>قال الله تعالى: ﴿قُلْ ‌هذِهِ ‌سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَما أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
     </div>
   </header>
 
-  <!-- القائمة -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
-      <a class="navbar-brand" href="#">الرئيسية</a>
+      <a class="navbar-brand" href="index.html">الرئيسية</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -132,224 +80,11 @@
 <body>
   <header class="bg-success text-white text-center p-4">
     <h1>المؤلفات</h1>
-  </header>
-
-  <main class="container my-4">
-    <div class="row">
-      <!-- مثال كتاب -->
-      <div class="col-md-4">
-        <div class="card shadow">
-          <img src="book-cover.jpg" class="card-img-top" alt="غلاف الكتاب">
-          <div class="card-body">
-            <h5 class="card-title">اسم الكتاب</h5>
-            <p class="card-text">وصف مختصر عن الكتاب...</p>
-            <a href="#" class="btn btn-success">تحميل / قراءة</a>
-          </div>
-        </div>
-      </div>
-      <!-- أضف المزيد من الكتب -->
-    </div>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>الدروس - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>الدروس</h1>
-  </header>
-
-  <main class="container my-4">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <strong>عنوان الدرس:</strong> درس في العقيدة
-        <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
-      </li>
-      <li class="list-group-item">
-        <strong>عنوان الدرس:</strong> درس في الفقه
-        <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
-      </li>
-      <!-- أضف المزيد من الدروس -->
-    </ul>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>الخطب - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>الخطب</h1>
-  </header>
-
-  <main class="container my-4">
-    <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action">
-        خطبة الجمعة - أهمية الصلاة
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        خطبة الجمعة - بر الوالدين
-      </a>
-      <!-- أضف المزيد من الخطب -->
-    </div>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>الدورات - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>الدورات</h1>
-  </header>
-
-  <main class="container my-4">
-    <div class="card mb-3 shadow">
-      <div class="card-body">
-        <h5 class="card-title">عنوان الدورة: دورة في علوم القرآن</h5>
-        <p class="card-text">مدة الدورة: 4 أسابيع<br>المحتوى: تفسير، تجويد، علوم القرآن</p>
-        <a href="#" class="btn btn-success">تفاصيل / تسجيل</a>
-      </div>
-    </div>
-    <!-- أضف المزيد من الدورات -->
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>المؤلفات - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>المؤلفات</h1>
     <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
   </header>
 
   <main class="container my-4">
     <div class="row">
-      <!-- مثال كتاب -->
-      <div class="col-md-4">
-        <div class="card shadow">
-          <img src="book-cover.jpg" class="card-img-top" alt="غلاف الكتاب">
-          <div class="card-body">
-            <h5 class="card-title">اسم الكتاب</h5>
-            <p class="card-text">وصف مختصر عن الكتاب...</p>
-            <a href="#" class="btn btn-success">تحميل / قراءة</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>الدروس - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>الدروس</h1>
-    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
-  </header>
-
-  <main class="container my-4">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <strong>عنوان الدرس:</strong> درس في العقيدة
-        <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
-      </li>
-      <li class="list-group-item">
-        <strong>عنوان الدرس:</strong> درس في الفقه
-        <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
-      </li>
-    </ul>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>الخطب - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>الخطب</h1>
-    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
-  </header>
-
-  <main class="container my-4">
-    <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action">
-        خطبة الجمعة - أهمية الصلاة
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        خطبة الجمعة - بر الوالدين
-      </a>
-    </div>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>الدورات - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>الدورات</h1>
-    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
-  </header>
-
-  <main class="container my-4">
-    <div class="card mb-3 shadow">
-      <div class="card-body">
-        <h5 class="card-title">عنوان الدورة: دورة في علوم القرآن</h5>
-        <p class="card-text">مدة الدورة: 4 أسابيع<br>المحتوى: تفسير، تجويد، علوم القرآن</p>
-        <a href="#" class="btn btn-success">تفاصيل / تسجيل</a>
-      </div>
-    </div>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>المؤلفات - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-success text-white text-center p-4">
-    <h1>المؤلفات</h1>
-    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
-  </header>
-
-  <main class="container my-4">
-    <div class="row">
-      <!-- مثال كتاب -->
       <div class="col-md-4">
         <div class="card shadow">
           <img src="book-cover.jpg" class="card-img-top" alt="غلاف الكتاب">
@@ -369,21 +104,71 @@
   </footer>
 </body>
 </html>
-<header class="bg-success text-white text-center p-4">
-  <h1>الدروس</h1>
-  <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
-</header>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الدروس - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-success text-white text-center p-4">
+    <h1>الدروس</h1>
+    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
+  </header>
 
-<main class="container my-4">
-  <ul class="list-group">
-    <li class="list-group-item">
-      <strong>عنوان الدرس:</strong> درس في العقيدة
-      <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
-    </li>
-  </ul>
-</main>
+  <main class="container my-4">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <strong>عنوان الدرس:</strong> درس في العقيدة
+        <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
+      </li>
+      <li class="list-group-item">
+        <strong>عنوان الدرس:</strong> درس في الفقه
+        <a href="#" class="btn btn-sm btn-success float-end">استماع</a>
+      </li>
+    </ul>
+  </main>
 
-<footer class="bg-success text-white text-center p-3">
-  <p>© 2026 - الموقع الرسمي للشيخ سعيد مصطفى دياب</p>
-  <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
-</footer>
+  <footer class="bg-success text-white text-center p-3">
+    <p>© 2026 - الموقع الرسمي للشيخ سعيد مصطفى دياب</p>
+    <a href="index.html" class="btn btn-warning
+      <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المؤلفات - الموقع الرسمي للشيخ سعيد مصطفى دياب</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    header h1 {
+      font-size: 2rem; /* تصغير الخط */
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-success text-white text-center p-4">
+    <h1>المؤلفات</h1>
+    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
+  </header>
+
+  <main class="container my-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="book-cover.jpg" class="card-img-top" alt="غلاف الكتاب">
+          <div class="card-body">
+            <h5 class="card-title">اسم الكتاب</h5>
+            <p class="card-text">وصف مختصر عن الكتاب...</p>
+            <a href="#" class="btn btn-success">تحميل / قراءة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-success text-white text-center p-3">
+    <p>© 2026 - الموقع الرسمي للشيخ سعيد مصطفى دياب</p>
+    <a href="index.html" class="btn btn-warning mt-2">⬅ رجوع إلى الرئيسية</a>
+  </footer>
+</body>
+</html>
