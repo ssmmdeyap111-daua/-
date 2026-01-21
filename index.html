@@ -76,5 +76,32 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
 </div>
 
 <script src="js/script.js"></script>
+      سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
+
+سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
+document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+<script>
+  // تعليمات JavaScript هنا
+  const links = document.querySelectorAll('.nav a');
+  const sections = document.querySelectorAll('.content-section');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      sections.forEach(s => s.style.display = 'none');
+      document.getElementById(link.dataset.sec).style.display = 'block';
+      document.getElementById(link.dataset.sec).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
 </body>
 </html>
