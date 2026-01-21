@@ -320,3 +320,4 @@ header {
 .marquee:hover span {
   animation-play-state: paused; /* عند مرور الموس تتوقف الحركة */
 }
+font-family: 'Amiri', serif;
