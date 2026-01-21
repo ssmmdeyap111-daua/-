@@ -1,164 +1,80 @@
+سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
 
+سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
+document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
   </script>
 
 </body>
 </html>
 
+سعيد بن مصطفى دياب, [03/08/1447 09:34 ص]
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>موقع الشيخ سعيد مصطفى دياب الرسمي</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    /* العنوان الرئيسي */
-    header {
-      background-color: #4a90e2;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 26px;
-      font-weight: bold;
-    }
-
-    /* شريط التنقل */
-    .nav {
-      background: #f8f8f8;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      overflow-x: auto;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    /* الأقسام */
-    .content-section {
-      padding: 20px;
-      display: none;
-      background-color: #fff;
-      border-top: 1px solid #ccc;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    /* تنسيق الكتب */
-    .books-container {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      padding: 10px 0;
-    }
-
-    .book {
-      flex: 0 0 auto;
-      width: 120px;
-      text-align: center;
-    }
-
-    .book img {
-      width: 120px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    .book p {
-      margin-top: 5px;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>موقع الشيخ سعيد مصطفى دياب الرسمي</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- العنوان الرئيسي -->
-  <header>
-    موقع الشيخ سعيد مصطفى دياب الرسمي
-  </header>
+<header>موقع الشيخ سعيد مصطفى دياب الرسمي</header>
 
-  <!-- شريط التنقل -->
-  <div class="nav">
-    <a data-sec="lessons">الدروس</a>
-    <a data-sec="books">الكتب</a>
-    <a data-sec="audio">الصوتيات</a>
-    <a data-sec="sermons">خطب الجمعة</a>
-    <a data-sec="contact">تواصل معنا</a>
-  </div>
+<!-- شريط الآية المتحرك -->
+<div class="marquee-container">
+  <span>بسم الله الرحمن الرحيم | هذه آية متحركة للعرض أسفل العنوان | سبحان الله</span>
+</div>
 
-  <!-- الأقسام -->
-  <div id="lessons" class="content-section">
-    <h2>الدروس</h2>
-    <p>قائمة الدروس هنا...</p>
-  </div>
+<!-- شريط التنقل -->
+<div class="nav">
+  <a data-sec="lessons">الدروس</a>
+  <a data-sec="books">الكتب</a>
+  <a data-sec="audio">الصوتيات</a>
+  <a data-sec="sermons">خطب الجمعة</a>
+  <a data-sec="contact">تواصل معنا</a>
+</div>
 
-  <div id="books" class="content-section">
-    <h2>الكتب</h2>
-    <div class="books-container">
-      <div class="book">
-        <img src="images/book1.jpg" alt="حياة القلوب">
-        <p>حياة القلوب</p>
-      </div>
-      <div class="book">
-        <img src="images/book2.jpg" alt="الفقه الإسلامي">
-        <p>الفقه الإسلامي</p>
-      </div>
-      <div class="book">
-        <img src="images/book3.jpg" alt="علوم القرآن">
-        <p>علوم القرآن</p>
-      </div>
-      <!-- أضف كتب أخرى هنا بنفس الطريقة -->
+<!-- الأقسام -->
+<div id="lessons" class="content-section">
+  <h2>الدروس</h2>
+  <p>قائمة الدروس هنا...</p>
+</div>
+
+<div id="books" class="content-section">
+  <h2>الكتب</h2>
+  <div class="books-container">
+    <div class="book">
+      <img src="images/book1.jpg" alt="حياة القلوب">
+      <p>حياة القلوب</p>
+    </div>
+    <div class="book">
+      <img src="images/book2.jpg" alt="الفقه الإسلامي">
+      <p>الفقه الإسلامي</p>
+    </div>
+    <div class="book">
+      <img src="images/book3.jpg" alt="علوم القرآن">
+      <p>علوم القرآن</p>
     </div>
   </div>
+</div>
 
-  <div id="audio" class="content-section">
-    <h2>الصوتيات</h2>
-    <p>قائمة الصوتيات هنا...</p>
-  </div>
+<div id="audio" class="content-section">
+  <h2>الصوتيات</h2>
+  <p>قائمة الصوتيات هنا...</p>
+</div>
 
-  <div id="sermons" class="content-section">
-    <h2>خطب الجمعة</h2>
-    <p>قائمة الخطب هنا...</p>
-  </div>
+<div id="sermons" class="content-section">
+  <h2>خطب الجمعة</h2>
+  <p>قائمة الخطب هنا...</p>
+</div>
 
-  <div id="contact" class="content-section">
-    <h2>تواصل معنا</h2>
-    <p>نموذج التواصل هنا...</p>
-  </div>
+<div id="contact" class="content-section">
+  <h2>تواصل معنا</h2>
+  <p>نموذج التواصل هنا...</p>
+</div>
 
-  <!-- JavaScript لإظهار الأقسام عند الضغط -->
-  <script>
-    const links = document.querySelectorAll('.nav a');
-    const sections = document.querySelectorAll('.content-section');
-
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        // إخفاء كل الأقسام
-        sections.forEach(s => s.style.display = 'none');
-        // إظهار القسم المحدد
-        document.getElementById(link.dataset.sec).style.display = 'block';
-        // تمرير سلس إلى القسم
-        document.getElementById(link.dataset.sec).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
