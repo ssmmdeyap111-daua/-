@@ -10,7 +10,7 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
 </body>
 </html>
 
-سعيد بن مصطفى دياب, [03/08/1447 09:10 ص]
+سعيد بن مصطفى دياب, [03/08/1447 09:19 ص]
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -21,81 +21,148 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
     }
+
+    /* العنوان الرئيسي */
+    header {
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    /* شريط التنقل */
     .nav {
       background: #f8f8f8;
       border-bottom: 1px solid #ddd;
-      padding: 10px;
+      padding: 10px 0;
       display: flex;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
+      overflow-x: auto;
     }
+
     .nav a {
       text-decoration: none;
       color: #000;
       font-weight: bold;
       cursor: pointer;
+      white-space: nowrap;
     }
+
+    /* الأقسام */
     .content-section {
       padding: 20px;
       display: none;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
     }
+
     h2 {
       margin-top: 0;
+    }
+
+    /* تنسيق الكتب */
+    .books-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .book {
+      flex: 0 0 auto;
+      width: 120px;
+      text-align: center;
+    }
+
+    .book img {
+      width: 120px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .book p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
     }
   </style>
 </head>
 <body>
 
+  <!-- العنوان الرئيسي -->
+  <header>
+    موقع الشيخ سعيد مصطفى دياب الرسمي
+  </header>
+
   <!-- شريط التنقل -->
   <div class="nav">
-    <a data-sec="lessons">الدروس العلمية</a>
+    <a data-sec="lessons">الدروس</a>
     <a data-sec="books">الكتب</a>
     <a data-sec="audio">الصوتيات</a>
-    <a data-sec="articles">المقالات</a>
+    <a data-sec="sermons">خطب الجمعة</a>
     <a data-sec="contact">تواصل معنا</a>
   </div>
 
   <!-- الأقسام -->
   <div id="lessons" class="content-section">
-    <h2>الدروس العلمية</h2>
+    <h2>الدروس</h2>
     <p>قائمة الدروس هنا...</p>
   </div>
 
   <div id="books" class="content-section">
     <h2>الكتب</h2>
-    <ul>
-      <li>كتاب 1</li>
-      <li>كتاب 2</li>
-      <li>كتاب 3</li>
-    </ul>
+    <div class="books-container">
+      <div class="book">
+        <img src="images/book1.jpg" alt="حياة القلوب">
+        <p>حياة القلوب</p>
+      </div>
+      <div class="book">
+        <img src="images/book2.jpg" alt="الفقه الإسلامي">
+        <p>الفقه الإسلامي</p>
+      </div>
+      <div class="book">
+        <img src="images/book3.jpg" alt="علوم القرآن">
+        <p>علوم القرآن</p>
+      </div>
+      <!-- أضف كتب أخرى هنا بنفس الطريقة -->
+    </div>
   </div>
 
   <div id="audio" class="content-section">
     <h2>الصوتيات</h2>
-    <p>روابط أو قائمة صوتيات...</p>
+    <p>قائمة الصوتيات هنا...</p>
   </div>
 
-  <div id="articles" class="content-section">
-    <h2>المقالات</h2>
-    <p>محتوى المقالات...</p>
+  <div id="sermons" class="content-section">
+    <h2>خطب الجمعة</h2>
+    <p>قائمة الخطب هنا...</p>
   </div>
 
   <div id="contact" class="content-section">
     <h2>تواصل معنا</h2>
-    <p>نموذج أو معلومات التواصل...</p>
+    <p>نموذج التواصل هنا...</p>
   </div>
 
+  <!-- JavaScript لإظهار الأقسام عند الضغط -->
   <script>
     const links = document.querySelectorAll('.nav a');
     const sections = document.querySelectorAll('.content-section');
 
-    links.forEach(l => {
-      l.addEventListener('click', () => {
+    links.forEach(link => {
+      link.addEventListener('click', () => {
         // إخفاء كل الأقسام
         sections.forEach(s => s.style.display = 'none');
         // إظهار القسم المحدد
-        document.getElementById(l.dataset.sec).style.display = 'block';
+        document.getElementById(link.dataset.sec).style.display = 'block';
+        // تمرير سلس إلى القسم
+        document.getElementById(link.dataset.sec).scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
