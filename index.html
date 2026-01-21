@@ -19,17 +19,17 @@
     }
     .site-title {
       font-family: 'Scheherazade New', serif;
-      font-size: 2.2rem;   /* أصغر قليلاً */
-      color: #ffd700;      /* ذهبي */
+      font-size: 2.2rem;
+      color: #ffd700;
       margin-bottom: 5px;
-      margin-top: -10px;   /* رفع الكلمة لأعلى قليلاً */
+      margin-top: -20px; /* رفع الكلمة لأعلى أكثر */
     }
     .title-space {
-      margin: 15px 0; /* مسافة فاصلة بين العنوان والاسم */
+      margin: 15px 0;
     }
     .site-subtitle {
       font-family: 'Scheherazade New', serif;
-      font-size: 3.5rem;   /* أكبر من العنوان */
+      font-size: 3.5rem;
       border: 6px double #d4af37;
       display: inline-block;
       padding: 15px 25px;
@@ -39,27 +39,26 @@
       margin-bottom: 15px;
     }
     .marquee {
-      background-color: #d4af37; /* اللون الذهبي */
+      background-color: #d4af37;
       color: black;
       font-weight: bold;
-      padding: 15px;
       overflow: hidden;
       position: relative;
-      width: 100%;       /* بكامل العرض */
-      height: 60px;      /* عريض */
-      font-size: 1.3rem; /* خط أكبر */
-      text-align: right; /* النص يبدأ من اليمين */
+      width: 100%;
+      height: 60px;
+      font-size: 1.3rem;
     }
     .marquee span {
       display: inline-block;
       white-space: nowrap;
       position: absolute;
       animation: scroll-left 20s linear infinite;
-      line-height: 60px; /* النص في منتصف الشريط */
+      top: 50%;               /* يضع النص في منتصف الشريط */
+      transform: translateY(-50%); /* يرفعه لأعلى ليكون في الوسط */
     }
     @keyframes scroll-left {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+      0%   { transform: translateX(100%) translateY(-50%); }
+      100% { transform: translateX(-100%) translateY(-50%); }
     }
     .navbar-nav .nav-link i {
       margin-left: 5px;
