@@ -183,3 +183,46 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
+سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
+
+سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
+document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+سعيد بن مصطفى دياب, [03/08/1447 10:30 ص]
+<div class="marquee-container">
+  <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
+</div>
+
+سعيد بن مصطفى دياب, [03/08/1447 11:04 ص]
+<div class="marquee-container">
+  <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
+</div>
+
+سعيد بن مصطفى دياب, [03/08/1447 11:09 ص]
+.marquee-container {
+  background-color: #e8f5e9;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid #2e7d32;
+}
+
+.marquee-container span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: move 20s linear infinite;
+  font-size: 18px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
