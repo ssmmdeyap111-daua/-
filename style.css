@@ -281,3 +281,29 @@ header {
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+.marquee {
+  background-color: #d4af37; /* اللون الذهبي */
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;       /* بكامل العرض */
+  height: 60px;      /* ارتفاع الشريط */
+  font-size: 1.3rem; /* حجم الخط */
+}
+
+.marquee span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: scroll-left 20s linear infinite;
+  line-height: 60px; /* مساوي لارتفاع الشريط */
+}
+.site-title {
+  font-family: 'Scheherazade New', serif;
+  font-size: 2.2rem;   /* الحجم */
+  color: #ffd700;      /* ذهبي */
+  margin-bottom: 5px;
+  margin-top: -10px;   /* رفع الكلمة لأعلى قليلاً */
+}
