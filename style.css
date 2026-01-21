@@ -421,3 +421,79 @@ body {
   font-size: 14px;
   color: #333;
 }
+سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
+<img src="../images/book1.jpg" alt="غلاف الكتاب">
+
+سعيد بن مصطفى دياب, [03/08/1447 07:36 ص]
+/* الشريط الرئيسي */
+.top-menu {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu li {
+  position: relative;
+}
+
+.top-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* محتوى القائمة المنسدلة */
+.dropdown-content {
+  display: none; /* مخفية افتراضياً */
+  position: absolute;
+  top: 100%; /* أسفل الزر */
+  left: 0;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  white-space: nowrap;
+  border-radius: 5px;
+  overflow-x: auto; /* تمرير أفقي إذا زادت الكتب */
+}
+
+/* كل كتاب داخل القائمة */
+.dropdown-content .book {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.dropdown-content .book img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.dropdown-content .book p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* إظهار القائمة عند الضغط أو المرور */
+.dropdown.show .dropdown-content {
+  display: flex;
+}
+
+/* تأثير عند المرور للكمبيوتر */
+@media(min-width: 768px){
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+}
