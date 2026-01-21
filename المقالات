@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>📚 المقالات</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+    .btn-success {
+      background-color: #2e7d32;
+      border: none;
+    }
+    .btn-success:hover {
+      background-color: #1b5e20;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    /* زر العودة للأعلى */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: none;
+      z-index: 999;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 1.5rem;
+      background-color: #ffd700;
+      color: black;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- شريط التنقل -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="font-size:1.2rem; font-weight:bold;">الرئيسية</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="articles.html"><i class="fas fa-newspaper"></i> المقالات</a></li>
+          <li class="nav-item"><a class="nav-link" href="books.html"><i class="fas fa-book"></i> المؤلفات</a></li>
+          <li class="nav-item"><a class="nav-link" href="lessons.html"><i class="fas fa-chalkboard-teacher"></i> الدروس</a></li>
+          <li class="nav-item"><a class="nav-link" href="khutbah.html"><i class="fas fa-microphone"></i> الخطب</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html"><i class="fas fa-users"></i> الدورات</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- الهيدر -->
+  <header>
+    <h1>📚 المقالات</h1>
+    <p>هنا تجد أحدث المقالات والموضوعات</p>
+  </header>
+
+  <!-- قسم المقالات -->
+  <main class="container my-5">
+    <div class="row">
+      <!-- المقال الأول -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <img src="article1.jpg" class="card-img-top" alt="صورة المقال الأول">
+          <div class="card-body">
+            <h5 class="card-title">عنوان المقال الأول</h5>
+            <p class="card-text">ملخص قصير عن المقال يوضح الفكرة الأساسية...</p>
+            <a href="article1.html" class="btn btn-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقال الثاني -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <img src="article2.jpg" class="card-img-top" alt="صورة المقال الثاني">
+          <div class="card-body">
+            <h5 class="card-title">عنوان المقال الثاني</h5>
+            <p class="card-text">ملخص قصير عن المقال يوضح الفكرة الأساسية...</p>
+            <a href="article2.html" class="btn btn-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقال الثالث -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <img src="article3.jpg" class="card-img-top" alt="صورة المقال الثالث">
+          <div class="card-body">
+            <h5 class="card-title">عنوان المقال الثالث</h5>
+            <p class="card-text">ملخص قصير عن المقال يوضح الفكرة الأساسية...</p>
+            <a href="article3.html" class="btn btn-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- صف جديد -->
+    <div class="row">
+      <!-- المقال الرابع -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <img src="article4.jpg" class="card-img-top" alt="صورة المقال الرابع">
+          <div class="card-body">
+            <h5 class="card-title">عنوان المقال الرابع</h5>
+            <p class="card-text">ملخص قصير عن المقال يوضح الفكرة الأساسية...</p>
+            <a href="article4.html" class="btn btn-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقال الخامس -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <img src="article5.jpg" class="card-img-top" alt="صورة المقال الخامس">
+          <div class="card-body">
+            <h5 class="card-title">عنوان المقال الخامس</h5>
+            <p class="card-text">ملخص قصير عن المقال يوضح الفكرة الأساسية...</p>
+            <a href="article5.html" class="btn btn-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقال السادس -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <img src="article6.jpg" class="card-img-top" alt="صورة المقال السادس">
+          <div class="card-body">
+            <h5 class="card-title">عنوان المقال السادس</h5>
+            <p class="card-text">ملخص قصير عن المقال يوضح الفكرة الأساسية...</p>
+            <a href="article6.html" class="btn btn-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- زر العودة للأعلى -->
+  <a href="#top" id="backToTop">⬆️</a>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2026 - الموقع الرسمي للشيخ سعيد مصطفى دياب</p>
+  </footer>
+
+  <!-- سكربت -->
+  <script>
+    // إظهار زر العودة للأعلى عند النزول
+    window.onscroll = function() {
+      const btn = document.getElementById("backToTop");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
