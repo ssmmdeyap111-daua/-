@@ -327,3 +327,7 @@ header {
   text-align: center;
   padding: 80px 20px; /* بدل 50px، الآن الشريط أعرض */
 }
+.navbar-nav .nav-link {
+  font-size: 1.2rem;   /* تكبير حجم الخط */
+  font-weight: bold;   /* جعل الخط عريض مثل الرئيسية */
+}
