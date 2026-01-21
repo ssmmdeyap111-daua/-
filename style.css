@@ -307,3 +307,16 @@ header {
   margin-bottom: 5px;
   margin-top: -10px;   /* رفع الكلمة لأعلى قليلاً */
 }
+.marquee span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: scroll-left 20s linear infinite;
+  top: 50%;
+  transform: translateY(-50%);
+  animation-play-state: running; /* الحركة تعمل بشكل طبيعي */
+}
+
+.marquee:hover span {
+  animation-play-state: paused; /* عند مرور الموس تتوقف الحركة */
+}
