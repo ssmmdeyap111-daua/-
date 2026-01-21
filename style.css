@@ -321,3 +321,9 @@ header {
   animation-play-state: paused; /* عند مرور الموس تتوقف الحركة */
 }
 font-family: 'Amiri', serif;
+header {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 80px 20px; /* بدل 50px، الآن الشريط أعرض */
+}
