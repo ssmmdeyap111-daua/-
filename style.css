@@ -331,3 +331,6 @@ header {
   font-size: 1.2rem;   /* تكبير حجم الخط */
   font-weight: bold;   /* جعل الخط عريض مثل الرئيسية */
 }
+html {
+  scroll-behavior: smooth;
+}
