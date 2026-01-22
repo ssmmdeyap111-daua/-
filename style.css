@@ -1,7 +1,4 @@
-سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
-<img src="../images/book1.jpg" alt="غلاف الكتاب">
 
-سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
 document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
       });
     });
@@ -10,7 +7,7 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
 </body>
 </html>
 
-سعيد بن مصطفى دياب, [03/08/1447 09:47 ص]
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -150,11 +147,6 @@ h2 {
     height: 180px;
   }
 }
-سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
-<img src="../images/book1.jpg" alt="غلاف الكتاب">
-
-سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
-document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
@@ -162,7 +154,6 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
 </body>
 </html>
 
-سعيد بن مصطفى دياب, [03/08/1447 10:21 ص]
 .marquee-container {
   background-color: #e8f5e9;
   overflow: hidden;
@@ -183,11 +174,7 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
-سعيد بن مصطفى دياب, [03/08/1447 07:15 ص]
-<img src="../images/book1.jpg" alt="غلاف الكتاب">
 
-سعيد بن مصطفى دياب, [03/08/1447 08:37 ص]
-document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
@@ -195,17 +182,13 @@ document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
 </body>
 </html>
 
-سعيد بن مصطفى دياب, [03/08/1447 10:30 ص]
+  <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
+</div>
+
 <div class="marquee-container">
   <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
 </div>
 
-سعيد بن مصطفى دياب, [03/08/1447 11:04 ص]
-<div class="marquee-container">
-  <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-</div>
-
-سعيد بن مصطفى دياب, [03/08/1447 11:09 ص]
 .marquee-container {
   background-color: #e8f5e9;
   overflow: hidden;
@@ -244,10 +227,9 @@ header {
   margin: 15px 0; /* مسافة فاصلة بين العنوان والاسم */
 }
 
-.site-subtitle {
   font-family: 'Scheherazade New', serif;
   font-size: 3.5rem;   /* أكبر من العنوان */
-  border: 6px double #d4af37;
+ 
   display: inline-block;
   padding: 15px 25px;
   border-radius: 20px;
