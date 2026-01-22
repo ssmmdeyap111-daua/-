@@ -73,30 +73,26 @@
   <title>الدروس الصوتية</title>
 </head>
 <body>
-  <h1>الدروس الصوتية</h1>
-  <ul>
-    <li>
-      <audio controls>
-        <source src="audio/lesson1.mp3" type="audio/mpeg">
-      </audio>
-      درس 1: تفسير سورة الفاتحة
-    </li>
-    <li>
-      <audio controls>
-        <source src="audio/lesson2.mp3" type="audio/mpeg">
-      </audio>
-      درس 2: السيرة النبوية
-    </li>
-  </ul>
-</body>
-</html>
-
- <div class="icon">
-  <a href="lessons.html">
-    <img src="icons/lessons.png" alt="الدروس">
-    <p>الدروس</p>
-  </a>
+<!-- الأيقونة -->
+<div class="icon" onclick="showLessons()">
+  <img src="icons/lessons.png" alt="الدروس">
+  <p>الدروس</p>
 </div>
+
+<!-- قسم الدروس (مخفي في البداية) -->
+<div id="lessons" style="display:none;">
+  <h2>الدروس الصوتية</h2>
+  <audio controls>
+    <source src="audio/lesson1.mp3" type="audio/mpeg">
+  </audio>
+  <p>درس 1: الفاتحة</p>
+</div>
+
+<script>
+function showLessons() {
+  document.getElementById("lessons").style.display = "block";
+}
+</script>
 
 
     
