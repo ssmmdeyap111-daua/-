@@ -1,329 +1,67 @@
-
-document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
-
-</body>
-</html>
-
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+    font-family: "Tahoma", sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: #2e7d32;
-  color: #fff;
-  text-align: center;
-  padding: 25px 0;
-  font-size: 28px;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: #2c7be5;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.marquee-container {
-  background-color: #e8f5e9;
-  overflow: hidden;
-  white-space: nowrap;
-  border-bottom: 2px solid #2e7d32;
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-.marquee-container span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: move 20s linear infinite;
-  font-size: 18px;
-  color: #2e7d32;
-  font-weight: bold;
+header nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes move {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+header nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px 0;
-  border-bottom: 2px solid #2e7d32;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+header nav ul.menu li a:hover {
+    text-decoration: underline;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #2e7d32;
-  font-weight: bold;
-  padding: 5px 10px;
-  transition: background 0.3s, color 0.3s, border-radius 0.3s;
+.home-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
 }
 
-.nav a:hover {
-  background-color: #2e7d32;
-  color: #fff;
-  border-radius: 5px;
+.icon-box {
+    text-align: center;
+    width: 180px;
+    text-decoration: none;
+    color: black;
 }
 
-.content-section {
-  display: none;
-  padding: 25px 20px;
-  background-color: #fff;
-  margin: 20px auto;
-  max-width: 1000px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-h2 {
-  margin-top: 0;
-  color: #2e7d32;
-  border-bottom: 2px solid #2e7d32;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.books-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 15px 0;
-}
-
-.book {
-  flex: 0 0 auto;
-  width: 150px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.book img {
-  width: 150px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-.book:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.book p {
-  margin-top: 8px;
-  font-size: 15px;
-}
-
-.books-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.books-container::-webkit-scrollbar-thumb {
-  background-color: #2e7d32;
-  border-radius: 4px;
-}
-
-@media(max-width: 600px){
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .book {
-    width: 120px;
-  }
-  .book img {
-    width: 120px;
+.icon-box img {
+    width: 100%;
     height: 180px;
-  }
-}
-      });
-    });
-  </script>
-
-</body>
-</html>
-
-.marquee-container {
-  background-color: #e8f5e9;
-  overflow: hidden;
-  white-space: nowrap;
-  border-bottom: 2px solid #2e7d32;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.marquee-container span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: move 20s linear infinite;
-  font-size: 18px;
-  color: #2e7d32;
-  font-weight: bold;
-}
-
-@keyframes move {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-
-      });
-    });
-  </script>
-
-</body>
-</html>
-
-  <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-</div>
-
-<div class="marquee-container">
-  <span>قال الله تعالى: ﴿قُلْ هذِهِ سَبِيلِي أَدْعُوا إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ (108)﴾. سورة يوسف</span>
-</div>
-
-.marquee-container {
-  background-color: #e8f5e9;
-  overflow: hidden;
-  white-space: nowrap;
-  border-bottom: 2px solid #2e7d32;
-}
-
-.marquee-container span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: move 20s linear infinite;
-  font-size: 18px;
-  color: #2e7d32;
-  font-weight: bold;
-}
-
-@keyframes move {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-header {
-  background-color: #2e7d32;
-  color: white;
-  text-align: center;
-  padding: 50px 20px; /* زيادة ارتفاع الشريط */
-}
-
-.site-title {
-  font-family: 'Scheherazade New', serif;
-  font-size: 2.2rem;   /* أصغر قليلاً */
-  color: #ffd700;      /* ذهبي */
-  margin-bottom: 5px;
-}
-
-.title-space {
-  margin: 15px 0; /* مسافة فاصلة بين العنوان والاسم */
-}
-
-  font-family: 'Scheherazade New', serif;
-  font-size: 3.5rem;   /* أكبر من العنوان */
- 
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 20px;
-  background: rgba(0,0,0,0.2);
-  box-shadow: 0 0 20px #d4af37;
-  margin-bottom: 15px;
-}
-
-.marquee {
-  background-color: #d4af37; /* اللون الذهبي */
-  color: black;
-  font-weight: bold;
-  padding: 15px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;       /* بكامل العرض */
-  height: 60px;      /* عريض */
-  font-size: 1.3rem; /* خط أكبر */
-  text-align: right; /* النص يبدأ من اليمين */
-}
-
-.marquee span {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  animation: scroll-left 20s linear infinite;
-  line-height: 60px;
-}
-
-@keyframes scroll-left {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-.marquee {
-  background-color: #d4af37; /* اللون الذهبي */
-  color: black;
-  font-weight: bold;
-  padding: 15px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;       /* بكامل العرض */
-  height: 60px;      /* ارتفاع الشريط */
-  font-size: 1.3rem; /* حجم الخط */
-}
-
-.marquee span {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  animation: scroll-left 20s linear infinite;
-  line-height: 60px; /* مساوي لارتفاع الشريط */
-}
-.site-title {
-  font-family: 'Scheherazade New', serif;
-  font-size: 2.2rem;   /* الحجم */
-  color: #ffd700;      /* ذهبي */
-  margin-bottom: 5px;
-  margin-top: -10px;   /* رفع الكلمة لأعلى قليلاً */
-}
-.marquee span {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  animation: scroll-left 20s linear infinite;
-  top: 50%;
-  transform: translateY(-50%);
-  animation-play-state: running; /* الحركة تعمل بشكل طبيعي */
-}
-
-.marquee:hover span {
-  animation-play-state: paused; /* عند مرور الموس تتوقف الحركة */
-}
-font-family: 'Amiri', serif;
-header {
-  background-color: #2e7d32;
-  color: white;
-  text-align: center;
-  padding: 80px 20px; /* بدل 50px، الآن الشريط أعرض */
-}
-.navbar-nav .nav-link {
-  font-size: 1.2rem;   /* تكبير حجم الخط */
-  font-weight: bold;   /* جعل الخط عريض مثل الرئيسية */
-}
-html {
-  scroll-behavior: smooth;
-}
-#backToTop {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  display: none; /* مخفي في البداية */
-  z-index: 999;
-}
-
-html {
-  scroll-behavior: smooth; /* الانتقال السلس */
+footer {
+    background: #2c7be5;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
 }
