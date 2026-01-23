@@ -1,3 +1,18 @@
+root/
+├─ index.html          ← الصفحة الرئيسية
+├─ books.html          ← صفحة الكتب
+├─ lessons.html        ← صفحة الدروس والصوتيات
+├─ khutbah.html        ← صفحة خطب الجمعة
+├─ contact.html        ← صفحة تواصل معنا
+├─ style.css           ← ملف التنسيقات العام
+├─ images/             ← صور الكتب والصور العامة
+│   ├─ book1.jpg
+│   └─ logo.png
+├─ pdfs/               ← ملفات PDF للكتب
+│   └─ book1.pdf
+├─ audio/              ← ملفات صوتية للدروس أو الخطب
+│   └─ lesson1.mp3
+
 body {
     font-family: "Tahoma", sans-serif;
     background: #f5f5f5;
