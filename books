@@ -1,7 +1,23 @@
-echo "# books" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ssmmdeyap111-daua/books.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الكتب والمؤلفات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="page-title">📚 الكتب والمؤلفات</h1>
+
+<div class="books-container">
+
+    <div class="book-card">
+        <img src="images/book1.jpg" alt="غلاف الكتاب">
+        <h3>عنوان الكتاب</h3>
+        <a href="pdfs/book1.pdf" target="_blank">تحميل الكتاب</a>
+    </div>
+
+</div>
+
+</body>
+</html>
